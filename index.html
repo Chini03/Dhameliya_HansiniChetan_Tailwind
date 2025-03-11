@@ -10,23 +10,23 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="font-[Arial, Helvetica, sans-serif]">
 
-    <header class="full-width-grid-con">
-        <div class="grid-con">
-            <div class="col-start-1 col-span-2 l-col-start-9 l-col-span-2" id="header-icon-conLeft">
-                <div class="svg-container">
+    <header class="bg-[#A19596] h-[176px]">
+        <div class="grid grid-cols-4 gap-4 lg:grid-cols-12 mx-[16px]">
+            <div class="col-start-1 col-span-2 lg:col-start-9 lg:col-span-2 flex flex-row" id="header-icon-conLeft">
+                <div class="w-[52px] h-[52px] mr-[24px]">
                     <object data="images/icon-person-male.svg" type="image/svg+xml"></object>
                 </div>
-                <div class="svg-container">
+                <div class="w-[52px] h-[52px]">
                     <object data="images/icon-cart.svg" type="image/svg+xml"></object>
                 </div>
             </div>
-            <div class="col-start-3 col-span-2 l-col-start-5 l-col-span-2" id="header-icon-conRight">
-                <div class="svg-container">
+            <div class="col-start-3 col-span-2 lg:col-start-5 lg:col-span-2 flex flex-row justify-end" id="header-icon-conRight">
+                <div class="w-[52px] h-[52px] mr-[24px]">
                     <object data="images/icon-search.svg" type="image/svg+xml"></object>
                 </div>
-                <div class="svg-container">
+                <div class="w-[52px] h-[52px]">
                     <object data="images/icon-menu.svg" type="image/svg+xml"></object>
                 </div>
             </div>
@@ -36,87 +36,70 @@
                 <object data="images/logo.svg" type="image/svg+xml"></object>
             </div>
             -->
-            <div id="logoHeader-placeholder" class="col-start-1 l-col-start-1 l-col-span-2"><p>logo</p></div>
-            <div id="header-viewShop" class="col-start-3 l-col-start-11 l-col-span-2">View Shop</div>
+            <div id="logoHeader-placeholder" class="col-start-1 lg:col-start-1 lg:col-span-2 mt-[26px] text-[18px] py-[22px] px-[70px] bg-[#DDD6D7] h-[64px] w-[180px] text-[#453B3C] text-center"><p>logo</p></div>
+            <div id="header-viewShop" class="col-start-3 col-span-2 lg:col-start-11 lg:col-span-2 mt-[46px] text-[14px] py-[16px] px-[24px] bg-[#DDD6D7] h-[48px] w-[120px] ml-[60px] rounded-[4px] text-center">View Shop</div>
         </div>
     </header>
 
     <main>
         <h1 class="hidden">Welcome to Dr. Nut!</h1>
-        <section id="hero-section">
-            <h2 class="hidden">Promotional Product Posters</h2>
-            <!-- <img src="images/hero.jpg" alt="Promotional Prodcut Poster"> (Learn how to make a carousel)-->
-            <div id="heroImage-placeholder">Hero Image</div>
-        </section>
         <section id="product-section">
+            <nav>
+                <ul class="list-none flex flex-col justify-around items-center mt-[48px] p-[0px]">
+                    <li><a href="#" class="decoration-none text-[#DDD6D7]">Products</a></li>
+                    <li class="my-[40px] py-[40px] px-[60px]"><a href="#" class="decoration-none text-[#453B3C] border-y-[2px] border-[#DDD6D7] py-[40px] px-[60px]">Bundles</a></li>
+                    <li><a href="#" class="decoration-none text-[#DDD6D7]">Accessories</a></li>
+                </ul>
+            </nav>
             <h2 class="hidden">Check out our Products!</h2>
-            <article>
+            <article class="bg-[#DDD6D7] h-[415px] w-[380px] mt-[48px] mx-auto flex flex-col rounded-[8px]">
                 <!-- <img src="images/product_1.jpg" alt="Product Image"> -->
-                <div id="product_1-placeholder">Product Image</div>
-                <div class="descripton">
+                <div class="bg-[#453B3C] h-[240px] w-[348px] text-[#F1F1F1] mx-auto mt-[29px] mb-[24px] flex items-center justify-center" id="product_1-placeholder">Product Image</div>
+                <div class="flex justify-between mx-[16px]">
                     <div>
-                        <h3>Product Name</h3>
-                        <p>Product Description - Lorem ipsum</p>
+                        <h3 class="text-[18px] mb-[10px]">Product Name</h3>
+                        <p class="text-[13px]">Product Description - Lorem ipsum</p>
                     </div>
-                    <div class="col-start-3 prodSec-shopButton">Shop<br>Now</div>
+                    <div class="col-start-3 text-[14px] p-[24px] bg-[#F1F1F1] rounded-[4px]">Shop<br>Now</div>
                 </div>
             </article>
-            <article>
+            <article class="bg-[#DDD6D7] h-[415px] w-[380px] mt-[48px] mx-auto flex flex-col rounded-[8px]">
                 <!-- <img src="images/product_1.jpg" alt="Product Image"> -->
-                <div id="product_2-placeholder">Product Image</div>
-                <div class="descripton">
+                <div class="bg-[#453B3C] h-[240px] w-[348px] text-[#F1F1F1] mx-auto mt-[29px] mb-[24px] flex items-center justify-center" id="product_2-placeholder">Product Image</div>
+                <div class="flex justify-between mx-[16px]">
                     <div>
-                        <h3>Product Name</h3>
-                        <p>Product Description - Lorem ipsum</p>
+                        <h3 class="text-[18px] mb-[10px]">Product Name</h3>
+                        <p class="text-[13px]">Product Description - Lorem ipsum</p>
                     </div>
-                    <div class="col-start-3 prodSec-shopButton">Shop<br>Now</div>
+                    <div class="col-start-3 text-[14px] p-[24px] bg-[#F1F1F1] rounded-[4px]">Shop<br>Now</div>
                 </div>
             </article>
-        </section>
-        <section id="vid-section">
-            <h2 class="hidden">A promotional Video for our products</h2>
-            <div id="vid-placeholder">Video</div>
-        </section>
-        <section id="contact-section">
-            <h2>Contact Us</h2>
-            <form class="grid-con">
-                <label class="col-start-1 col-span-full" for="name">Name:</label>
-                <input class="col-start-1 col-span-full" type="text" name="name" id="name" placeholder="e.g John Doe">
-
-                <label class="col-start-1 col-span-full" for="email">Email:</label>
-                <input class="col-start-1 col-span-full" type="email" name="email" id="email" placeholder="e.g name@gmail.com">
-
-                <label class="col-start-1 col-span-full" for="message">Message:</label>
-                <input class="col-start-1 col-span-full" type="text" name="message" id="message" placeholder="Type Here..">
-
-                <input class="col-start-3 col-span-2 l-col-start-8 l-col-span-4" type="submit" value="Submit">
-            </form>
         </section>
     </main>
 
-    <footer class="full-width-grid-con">
-        <div class="grid-con">
+    <footer class="bg-[#A19596] mt-[48px]">
+        <div class="grid grid-cols-4 gap-4 lg:grid-cols-12 mx-[16px] h-[324px]">
             <!-- 
             <div class="svg-container">
                 <object data="images/logo.svg" type="image/svg+xml"></object>
             </div>
             -->
-            <div class="col-start-1 col-span-2 l-col-start-5 col-span-2" id="logoFooter-placeholder"><p>logo</p></div>
+            <div class="col-span-2 col-start-1 lg:col-start-5 lg:col-span-2 mt-[48px] text-[18px] py-[22px] px-[70px] bg-[#DDD6D7] h-[64px] w-[180px] text-[#453B3C] text-center" id="logoFooter-placeholder"><p>logo</p></div>
             <nav class="col-start-3 col-span-2 l-col-start-7 col-span-2">
-                <ul>
+                <ul class="flex flex-col justify-around align-center mt-[48px] list-none text-center text-[#F1F1F1]">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="index.html" class="decoration-none">Home</a>
+                    </li>
+                    <li class="my-[40px]">
+                        <a href="shop.html" class="decoration-none">Shop</a>
                     </li>
                     <li>
-                        <a href="shop.html">Shop</a>
-                    </li>
-                    <li>
-                        <a href="#">About Us</a>
+                        <a href="#" class="decoration-none">About Us</a>
                     </li>
                 </ul>
             </nav>
-            <a id="privacyPolicy" class="col-start-2 col-span-2 l-col-start-6 col-span-2" href="#">Privacy Policy</a>
-            <p id="copyright" class="col-start-2 col-span-2 l-col-start-6 col-span-2" > &copy;copyright Dr. Nut</p>
+            <a id="privacyPolicy" class="col-start-2 col-span-2 lg:col-start-6 lg:col-span-2 text-center text-[#F1F1F1] text-[11px] decoration-none" href="#">Privacy Policy</a>
+            <p id="copyright" class="col-start-2 col-span-2 lg:col-start-6 lg:col-span-2 text-center text-[#F1F1F1] text-[11px]" > &copy;copyright Dr. Nut</p>
         </div>
     </footer>
 
